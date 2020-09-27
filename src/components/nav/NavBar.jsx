@@ -1,6 +1,7 @@
 import React from "react";
 import "./navbar.css";
 import SearchIcon from "@material-ui/icons/Search";
+import ShoppingBasketIcon from "@material-ui/icons/ShoppingBasket";
 
 const NavBar = () => {
   return (
@@ -26,6 +27,11 @@ const NavBar = () => {
         <div className="nav__option">
           <span className="nav__optionLineOne">Your</span>
           <span className="nav__optionLineTwo">Prime</span>
+        </div>
+
+        <div className="nav__optionBasket">
+          <ShoppingBasketIcon />
+          <span className="nav__optionLineTwo nav__basketCount">0</span>
         </div>
       </div>
     </div>
